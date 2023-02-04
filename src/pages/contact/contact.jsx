@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
 
 //stylesheet
-import cls from "./Contact.module.scss";
+import cls from "./contact.module.scss";
 
 
 function Contact() {
