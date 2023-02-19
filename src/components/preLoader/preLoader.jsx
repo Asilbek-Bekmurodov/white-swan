@@ -1,5 +1,6 @@
 //stylesheet
 import cls from "./preLoader.module.scss";
+
 //package
 import { InfinitySpin } from "react-loader-spinner";
 
