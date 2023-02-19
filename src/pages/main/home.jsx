@@ -12,6 +12,7 @@ import Footer from "../../components/footer/footer";
 import MoreAbout from "./components/moreAbout/moreAbout";
 import { Lines } from "react-preloaders";
 import PreLoader from "../../components/preLoader/preLoader";
+import Partners from "./components/partners/partners";
 
 const headerData = [
   {
@@ -49,7 +50,6 @@ function Home() {
       setHeight(clientHeight);
     }, 1500);
   });
-
 
   const settings = {
     dots: true,
@@ -94,6 +94,7 @@ function Home() {
           <Features />
           <Ceo />
           <MoreAbout />
+          <Partners />
           <Footer />
         </>
       )}
