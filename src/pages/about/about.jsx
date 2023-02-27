@@ -1,3 +1,4 @@
+import { Lines } from "react-preloaders";
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
 

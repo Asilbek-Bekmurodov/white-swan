@@ -10,6 +10,7 @@ import Ceo from "./components/ceo/ceo";
 import Features from "./components/features/features";
 import Footer from "../../components/footer/footer";
 import MoreAbout from "./components/moreAbout/moreAbout";
+import { Lines } from "react-preloaders";
 
 const headerData = [
   {
