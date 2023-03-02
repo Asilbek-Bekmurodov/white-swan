@@ -88,6 +88,17 @@
   font-size: 60px;
   line-height: 60px;
   color: whitesmoke;
+  @media (max-width: 992px) {
+    font-size: 50px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media (max-width: 576px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .subtitle {
@@ -95,7 +106,23 @@
   line-height: 30px;
   color: white;
   margin: 20px 0 46px;
+  @media (max-width: 992px) {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 20px 0 46px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 18px 0 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0 20px;
+  }
 }
+
 .more_btn {
   padding: 16px 40px;
   background-color: #f9b025;
@@ -110,6 +137,15 @@
     background-color: transparent;
     color: white;
     border: 1px solid #f9b025;
+  }
+  @media (max-width: 992px) {
+    font-size: 17px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px;
   }
 }
 
