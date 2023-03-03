@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Slider from "react-slick";
 
 // style-sheet
 import cls from "./home.module.scss";
 import cx from "classnames";
+import Leading from "./components/leading";
 
 const headerData = [
   {
@@ -31,24 +32,37 @@ const headerData = [
 ];
 
 function Home() {
+  const sectionRef = useRef(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const { clientHeight } = sectionRef.current;
+    setHeight(clientHeight);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    speed: 500,
-    // autoplaySpeed: 4000,
-    // cssEase: "linear",
-    // pauseOnHover: false,
+    autoplay: true,
+    speed: 600,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    pauseOnHover: false,
   };
+
   return (
     <div>
-      <Navbar />
+      <Navbar fatherHeight={height} />
       <Slider {...settings}>
-        {headerData.map(({ secondClass, classname, title, subtitle }) => (
-          <div className={cx(cls[classname], cls.item)}>
+        {headerData.map(({ secondClass, classname, title, subtitle }, idx) => (
+          <div
+            key={idx}
+            ref={sectionRef}
+            className={cx(cls[classname], cls.item)}
+          >
             <div className={cls.container}>
               <div className={cls[secondClass]}>
                 <h1 className={cls.title}>{title}</h1>
@@ -59,6 +73,8 @@ function Home() {
           </div>
         ))}
       </Slider>
+
+      <Leading />
     </div>
   );
 }

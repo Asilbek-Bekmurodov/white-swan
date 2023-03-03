@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  transition: 0.5s all;
 }
 
 .navbar {
@@ -11,8 +12,7 @@
   padding: 16px 0;
   max-width: 1440px;
   margin: auto;
-  padding: 0 12vw;
-  margin-top: 20px;
+  padding: 14px 12vw;
 
   .logo {
     width: 190px;
@@ -35,4 +35,7 @@
       color: white;
     }
   }
+}
+.active {
+  background-color: rgb(18, 18, 18);
 }
