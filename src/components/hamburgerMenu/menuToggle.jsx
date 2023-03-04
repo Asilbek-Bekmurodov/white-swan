@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import cls from "./menuToggle.scss";
 
 const Path = (props) => (
   <motion.path
