@@ -15,7 +15,6 @@ function MenuToggle({ toggle, isOpen }) {
   return (
     <div
       style={{ cursor: "pointer", zIndex: 99 }}
-      className={cls.btn}
       onClick={toggle}
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
