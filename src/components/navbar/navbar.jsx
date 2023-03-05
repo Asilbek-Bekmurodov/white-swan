@@ -4,6 +4,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 //style-sheet
 import cls from "./navbar.module.scss";
+import HamburgerMenu from "../hamburgerMenu";
 
 function Navbar() {
   return (
@@ -14,8 +15,9 @@ function Navbar() {
         </div>
 
         <div className={cls.menu}>
-          <div className={cls["menu-title"]}>Menu</div>
-          <HiOutlineMenuAlt4 size={24} color="white" />
+          {/* <div className={cls["menu-title"]}>Menu</div>
+          <HiOutlineMenuAlt4 size={24} color="white" /> */}
+          <HamburgerMenu />
         </div>
       </div>
     </div>
