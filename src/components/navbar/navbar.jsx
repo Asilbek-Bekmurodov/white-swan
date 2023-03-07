@@ -14,7 +14,7 @@ function Navbar({ fatherHeight }) {
   useEffect(() => {
     console.log(fatherHeight);
     const changeBackground = () => {
-      if (window.scrollY >= fatherHeight - 105) {
+      if (window.scrollY >= fatherHeight - 160) {
         setNavbar(true);
       } else {
         setNavbar(false);

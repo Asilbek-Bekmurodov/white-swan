@@ -5,29 +5,31 @@ import Slider from "react-slick";
 // style-sheet
 import cls from "./home.module.scss";
 import cx from "classnames";
-import Leading from "./components/leading";
+import Leading from "./components/leading/leading";
+import Ceo from "./components/ceo/ceo";
+import Features from "./components/features/features";
 
 const headerData = [
   {
     classname: "first",
     secondClass: "first-info",
-    title: " Transportation Services around the Worlds",
+    title: " Transportation Services around the World",
     subtitle:
-      "Rockling Devario deep sea bonefish cutthroat trout streamer fishkaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting,suckermouth armored catfish luderick blackchin kingfish",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, vero perferendis. Atque voluptates nobis, beatae minus ea illo iusto doloremque, magnam ipsa eum laudantium eius vel ex tenetur ad id? Impedit animi laborum tenetur sint. Aliquid autem illo provident nisi.",
   },
   {
     classname: "second",
     secondClass: "second-info",
-    title: " Transportation Services around the Worlds",
+    title: " Transportation Services around the World",
     subtitle:
-      "Rockling Devario deep sea bonefish cutthroat trout streamer fishkaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting,suckermouth armored catfish luderick blackchin kingfish",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, vero perferendis. Atque voluptates nobis, beatae minus ea illo iusto doloremque, magnam ipsa eum laudantium eius vel ex tenetur ad id? Impedit animi laborum tenetur sint. Aliquid autem illo provident nisi.",
   },
   {
     classname: "third",
-    title: " Transportation Services around the Worlds",
+    title: " Transportation Services around the World",
     secondClass: "third-info",
     subtitle:
-      "Rockling Devario deep sea bonefish cutthroat trout streamer fishkaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting,suckermouth armored catfish luderick blackchin kingfish",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, vero perferendis. Atque voluptates nobis, beatae minus ea illo iusto doloremque, magnam ipsa eum laudantium eius vel ex tenetur ad id? Impedit animi laborum tenetur sint. Aliquid autem illo provident nisi.",
   },
 ];
 
@@ -73,8 +75,9 @@ function Home() {
           </div>
         ))}
       </Slider>
-
       <Leading />
+      <Features />
+      <Ceo />
     </div>
   );
 }
