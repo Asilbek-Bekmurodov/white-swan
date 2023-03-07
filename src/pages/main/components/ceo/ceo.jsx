@@ -9,7 +9,7 @@ function Ceo() {
           <img src={CEO} alt="" />
         </div>
         <div className={cls["ceo-info"]}>
-          <h4 className={cls.name}>Mark Zuckerberg</h4>
+          <h4 className={cls.name}>Tony West</h4>
           <div className={cls["about-wrapper"]}>
             <p className={cls.about}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

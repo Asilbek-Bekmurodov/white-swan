@@ -8,7 +8,7 @@ import cls from "./navbar.module.scss";
 import HamburgerMenu from "../hamburgerMenu";
 import { useEffect, useState } from "react";
 
-function Navbar({ fatherHeight }) {
+function Navbar({ fatherHeight, bgNav }) {
   const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,10 @@ function Navbar({ fatherHeight }) {
     window.addEventListener("scroll", changeBackground);
   }, [fatherHeight]);
   return (
-    <div className={cx(cls.container, navbar === true && cls.active)}>
+    <div
+      style={bgNav && { background: "black" }}
+      className={cx(cls.container, navbar === true && cls.active)}
+    >
       <div className={cls.navbar}>
         <div className={cls.logo}>
           <img src={Logo} alt="" />

@@ -1,6 +1,7 @@
 import React from "react";
 import cls from "./navMenu.module.scss";
 import { motion } from "framer-motion";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const variants = {
   show: {
@@ -13,6 +14,7 @@ const variants = {
   },
 };
 function NavMenu({ isOpen }) {
+  const navigate = useNavigate();
   return (
     <div className={cls.nav_menu_container}>
       <ul className={cls.nav_list}>
@@ -31,7 +33,7 @@ function NavMenu({ isOpen }) {
             },
           }}
         >
-          <a href="#">Home</a>
+          <NavLink to={"/"}>Home</NavLink>
         </motion.li>
 
         <motion.li
@@ -49,7 +51,7 @@ function NavMenu({ isOpen }) {
             },
           }}
         >
-          <a href="#">About us</a>
+          <NavLink to={"/about"}>About us</NavLink>
         </motion.li>
 
         <motion.li
