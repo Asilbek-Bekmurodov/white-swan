@@ -1,7 +1,7 @@
 //assets
 import Logo from "../../assets/images/Frame.svg";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import cx from "classnames"
+import cx from "classnames";
 
 //style-sheet
 import cls from "./navbar.module.scss";

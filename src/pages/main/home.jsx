@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import cls from "./home.module.scss";
 import cx from "classnames";
 import Leading from "./components/leading";
+import Footer from "../../components/footer/footer";
+import MoreAbout from "./components/moreAbout/moreAbout";
 
 const headerData = [
   {
@@ -75,6 +77,8 @@ function Home() {
       </Slider>
 
       <Leading />
+      <MoreAbout />
+      <Footer />
     </div>
   );
 }
