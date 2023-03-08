@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Lines background="black" animation="slide-down" color="#f9b025" />
+      {/* <Lines background="black" animation="slide-down" color="#f9b025" /> */}
     </div>
   );
 }

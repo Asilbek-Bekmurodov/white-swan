@@ -11,6 +11,7 @@ import Features from "./components/features/features";
 import Footer from "../../components/footer/footer";
 import MoreAbout from "./components/moreAbout/moreAbout";
 import { Lines } from "react-preloaders";
+import PreLoader from "../../components/preLoader/preLoader";
 
 const headerData = [
   {
@@ -39,11 +40,16 @@ const headerData = [
 function Home() {
   const sectionRef = useRef(null);
   const [height, setHeight] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const { clientHeight } = sectionRef.current;
-    setHeight(clientHeight);
-  }, []);
+    setTimeout(() => {
+      setLoading(false);
+      const clientHeight = sectionRef.current?.clientHeight;
+      setHeight(clientHeight);
+    }, 1500);
+  });
+
 
   const settings = {
     dots: true,
@@ -60,29 +66,37 @@ function Home() {
 
   return (
     <div>
-      <Navbar fatherHeight={height} />
-      <Slider {...settings}>
-        {headerData.map(({ secondClass, classname, title, subtitle }, idx) => (
-          <div
-            key={idx}
-            ref={sectionRef}
-            className={cx(cls[classname], cls.item)}
-          >
-            <div className={cls.container}>
-              <div className={cls[secondClass]}>
-                <h1 className={cls.title}>{title}</h1>
-                <p className={cls.subtitle}>{subtitle}</p>
-                <div className={cls.more_btn}>Explore more</div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider>
-      <Leading />
-      <Features />
-      <Ceo />
-      <MoreAbout />
-      <Footer />
+      {loading ? (
+        <PreLoader />
+      ) : (
+        <>
+          <Navbar fatherHeight={height} />
+          <Slider {...settings}>
+            {headerData.map(
+              ({ secondClass, classname, title, subtitle }, idx) => (
+                <div
+                  key={idx}
+                  ref={sectionRef}
+                  className={cx(cls[classname], cls.item)}
+                >
+                  <div className={cls.container}>
+                    <div className={cls[secondClass]}>
+                      <h1 className={cls.title}>{title}</h1>
+                      <p className={cls.subtitle}>{subtitle}</p>
+                      <div className={cls.more_btn}>Explore more</div>
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
+          </Slider>
+          <Leading />
+          <Features />
+          <Ceo />
+          <MoreAbout />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
