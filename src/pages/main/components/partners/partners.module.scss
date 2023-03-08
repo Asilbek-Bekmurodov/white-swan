@@ -1,18 +1,16 @@
 .bg-color {
   background-color: #f4f6f5;
-  z-index: -3;
-  position: inherit;
 }
 
 .partners {
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 7vw 100px;
-  z-index: 3;
-  position: relative;
   .title-container {
     position: relative;
     margin-bottom: 45px;
+    z-index: 0;
+
     @media (max-width: 1155px) {
       margin-bottom: 35px;
     }
