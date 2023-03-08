@@ -14,18 +14,7 @@ const partnersData = [
   },
   { img: "https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" },
 ];
-const settings = {
-  dots: true,
-  infinite: true,
-  fade: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 600,
-  autoplaySpeed: 4000,
-  cssEase: "linear",
-  pauseOnHover: false,
-};
+
 function Partners() {
   return (
     <div className={cls["bg-color"]}>
@@ -38,7 +27,7 @@ function Partners() {
           </h3>
         </div>
 
-        <div {...settings} className={cls["parners-container"]}>
+        <div className={cls["parners-container"]}>
           {partnersData.map(({ img }, idx) => (
             <div key={idx} className={cls.partner}>
               <img src={img} />
