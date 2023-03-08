@@ -7,9 +7,11 @@ import cx from "classnames";
 import cls from "./navbar.module.scss";
 import HamburgerMenu from "../hamburgerMenu";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar({ fatherHeight, bgNav }) {
   const [navbar, setNavbar] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.log(fatherHeight);
@@ -28,7 +30,7 @@ function Navbar({ fatherHeight, bgNav }) {
       className={cx(cls.container, navbar === true && cls.active)}
     >
       <div className={cls.navbar}>
-        <div className={cls.logo}>
+        <div onClick={() => navigate("/")} className={cls.logo}>
           <img src={Logo} alt="" />
         </div>
 

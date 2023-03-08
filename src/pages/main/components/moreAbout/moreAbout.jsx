@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import cls from "./moreAbout.module.scss";
 
 function MoreAbout() {
+  const navigate = useNavigate();
   return (
     <div className={cls.wrapper}>
       <div className={cls.bg} onMouseLeave={() => console.log("chiqtiiiii")}>
@@ -12,9 +14,10 @@ function MoreAbout() {
         ></video>
       </div>
       <h3
-        onMouseOver={(e) => {
-          e.stopPropagation();
-        }}
+        // onMouseOver={(e) => {
+        //   e.stopPropagation();
+        // }}
+        onClick={() => navigate("/about")}
       >
         More about us
       </h3>
