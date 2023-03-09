@@ -1,39 +1,8 @@
-.header {
-  background: url("https://images.unsplash.com/photo-1473445730015-841f29a9490b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  .container {
-    max-width: 1440px;
-    padding: 50px 7vw 50px;
-    margin: auto;
-    width: 100%;
-  }
-
-  .title {
-    font-size: 80px;
-    font-weight: 900;
-    color: white;
-    
-    @media (max-width: 768px) {
-      font-size: 40px;
-      line-height: 50px;
-      text-align: center;
-    }
-    @media (max-width: 576px) {
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center;
-    }
-  }
+.bg {
+  background-color: #f4f6f5;
 }
 
-.about-info {
+.mission-container {
   display: flex;
   max-width: 1440px;
   gap: 100px;
@@ -57,44 +26,14 @@
       width: 100%;
       height: 100%;
     }
-    .img-bottom {
-      background-color: #f9b025;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 30px 50px;
-      font-size: 35px;
-      max-width: 368px;
-      color: white;
-      font-weight: 700;
-      font-family: "Inter", sans-serif;
-      @media (max-width: 1155px) {
-        font-size: 30px;
-        padding: 30px 50px;
-      }
-      @media (max-width: 992px) {
-        font-size: 24px;
-        line-height: 45px;
-        left: 0;
-        padding: 25px 45px;
-      }
-      @media (max-width: 768px) {
-        font-size: 20px;
-        line-height: 30px;
-        padding: 20px 30px;
-        max-width: 268px;
-      }
-      @media (max-width: 576px) {
-        font-size: 16px;
-        line-height: 30px;
-        padding: 10px 20px;
-      }
-    }
   }
   .right-container {
+    order: -1;
+
     width: 50%;
     @media (max-width: 1100px) {
       width: 100%;
+      order: 1;
     }
     .small-title {
       font-size: 12px;

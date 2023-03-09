@@ -1,0 +1,85 @@
+.bg {
+  background: url("../../../../assets/images/map_achievements_2-2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.achievement {
+  max-width: 1440px;
+  padding: 100px 7vw 100px;
+  margin: auto;
+
+  .small-title {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #a9aeb3;
+    margin-bottom: 13px;
+    text-align: center;
+    display: block;
+  }
+  .title {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    @media (max-width: 1155px) {
+      font-size: 45px;
+      max-width: 100%;
+    }
+    @media (max-width: 992px) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+    @media (max-width: 768px) {
+      font-size: 35px;
+      line-height: 30px;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .statistic-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+    .statistic-card {
+      .number {
+        .num {
+          font-size: 80px;
+        }
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+        color: #005bac;
+        span {
+          font-size: 42px;
+        }
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+    .card-subtitle {
+      font-size: 16px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      @media (max-width: 768px) {
+        gap: 20px;
+      }
+    }
+  }
+}
