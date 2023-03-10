@@ -1,13 +1,14 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 //assets
 import Logo from "../../assets/images/Frame.svg";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import cx from "classnames";
 
 //style-sheet
 import cls from "./navbar.module.scss";
 import HamburgerMenu from "../hamburgerMenu";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 function Navbar({ fatherHeight, bgNav }) {
   const [navbar, setNavbar] = useState(false);
@@ -35,8 +36,6 @@ function Navbar({ fatherHeight, bgNav }) {
         </div>
 
         <div className={cls.menu}>
-          {/* <div className={cls["menu-title"]}>Menu</div>
-          <HiOutlineMenuAlt4 size={24} color="white" /> */}
           <HamburgerMenu />
         </div>
       </div>

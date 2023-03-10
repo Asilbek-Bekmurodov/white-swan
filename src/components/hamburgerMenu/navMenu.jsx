@@ -69,7 +69,24 @@ function NavMenu({ isOpen }) {
             },
           }}
         >
-          <a href="#">Services</a>
+          <NavLink to={"/services"}>Services</NavLink>
+        </motion.li>
+        <motion.li
+          className={cls.nav_ink}
+          initial={false}
+          animate={isOpen ? "show" : "hide"}
+          variants={{
+            show: {
+              ...variants.show,
+              transition: { delay: 0.6, duration: 0.2 },
+            },
+            hide: {
+              ...variants.hide,
+              transition: { delay: 0.2, duration: 0.05 },
+            },
+          }}
+        >
+          <NavLink to={"/contact"}>Contact</NavLink>
         </motion.li>
       </ul>
     </div>
