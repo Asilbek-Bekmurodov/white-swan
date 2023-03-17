@@ -1,15 +1,14 @@
 import { FiCheckCircle } from "react-icons/fi";
+//assets
+import SevicePhoto from "../../../../assets/images/female-call-center-agent-posing-with-headphones-with-mic.jpg";
+//stylesheet
 import cls from "./our-service.module.scss";
 
 function OurService() {
   return (
     <div className={cls["about-info"]}>
       <div className={cls["left-container"]}>
-        <img
-          className={cls["left-container_img"]}
-          src="https://img.freepik.com/free-photo/female-call-center-agent-posing-with-headphones-with-mic_329181-11504.jpg?w=1480&t=st=1679281588~exp=1679282188~hmac=eae7bb1aac869e24a27fb96c301c71ad3d5d64fed46edcb27f6966826848d29c"
-          alt=""
-        />
+        <img className={cls["left-container_img"]} src={SevicePhoto} alt="" />
       </div>
       <div className={cls["right-container"]}>
         <span className={cls["small-title"]}>OUR SERVICE</span>
