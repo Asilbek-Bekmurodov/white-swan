@@ -8,8 +8,6 @@ function PreLoader() {
   return (
     <div className={cls.preloader}>
       <InfinitySpin
-        height="200"
-        width="200"
         radius="9"
         color="#f9b025"
         ariaLabel="three-dots-loading"
