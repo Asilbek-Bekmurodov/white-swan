@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar/navbar";
 
 //stylesheet
 import cls from "./services.module.scss";
-
+import OurService from "./components/out-service/our-service";
 
 function Services() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +27,7 @@ function Services() {
               <div className={cls.title}>Our services</div>
             </div>
           </div>
-
+          <OurService />
           <Footer />
         </>
       )}
