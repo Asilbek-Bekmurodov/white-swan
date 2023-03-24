@@ -6,6 +6,7 @@ import Navbar from "../../components/navbar/navbar";
 //stylesheet
 import cls from "./services.module.scss";
 import OurService from "./components/out-service/our-service";
+import Works from "./components/how-we-works/works";
 
 function Services() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function Services() {
             </div>
           </div>
           <OurService />
+          <Works />
           <Footer />
         </>
       )}

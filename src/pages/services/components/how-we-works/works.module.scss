@@ -1,0 +1,76 @@
+.bg {
+  background: #31373f;
+}
+
+.how-we_works {
+  background: url("http://demo.artureanec.com/themes/transx/wp-content/uploads/2021/04/testimonials-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  max-width: 1440px;
+  padding: 150px 7vw 150px;
+  margin: auto;
+  width: 100%;
+  .subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 13px;
+    color: white;
+  }
+  .title {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+    margin-bottom: 50px;
+  }
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 60px;
+    align-items: center;
+    @media (max-width: 1122px) {
+      grid-template-columns: 400px 400px;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 888px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 661px) {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+      }
+    .steps {
+      @media (max-width: 1122px) {
+        text-align: center;
+      }
+      .step-number {
+        font-size: 100px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        font-weight: 700;
+        color: #f9b026;
+        font-family: "Inter", sans-serif;
+      }
+      .step-title {
+        color: #ffffff;
+        margin-top: 24px;
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+      }
+      .step-subtitle {
+        color: #ffffff;
+        margin-top: 24px;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+      }
+    }
+  }
+}
