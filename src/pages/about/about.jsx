@@ -27,7 +27,7 @@ function About() {
           <Navbar bgNav={true} />
           <div className={cls.header}>
             <div className={cls.container}>
-              <div className={cls.title}> About us</div>
+              <div className={cls.title}>About us</div>
             </div>
           </div>
 
@@ -41,43 +41,44 @@ function About() {
                 alt=""
               />
               <div className={cls["img-bottom"]}>
-                Faster than you can imagine
+                FAST SAFE RELIABLE
               </div>
             </div>
             <div className={cls["right-container"]}>
               <span className={cls["small-title"]}>ABOUT US</span>
               <h3 className={cls.title}>
-                Powerful Features of
-                <span> Transporterium</span> company
+                <span>White Swan</span>
               </h3>
-              <p className={cls["bold-subtitle"]}>
-                Brook trout powen harelip sucker gibberfish beluga sturgeon
-                coelacanth tidewater goby elephant fish yellowtail slender snipe
-                eel rasbora
+              <p className={cls["bold-subtitle"]}></p>
+
+              <p className={cls.subtitle}>
+                Within the overall supply-chain continuum is the most visible
+                and public aspect - the transportation and trucking sector. In
+                addition to significant growth, the transportation sector is
+                undergoing significant shifts in both how the sector is
+                approached from a more responsive perspective and how new
+                technology entering the sector, such as electric trucking has
+                created opportunities for smaller companies such as White-Swan.
               </p>
 
               <p className={cls.subtitle}>
-                Rainbowfish powen paddlefish brotula Arctic char zebra bullhead
-                shark. Yellowhead jawfish gianttail temperate ocean-bass
-                Atlantic eel river stingray skilfish. Flounder.
-              </p>
-
-              <p className={cls.subtitle}>
-                Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino
-                largenose fish moonfish aruana glowlight danio. Basking shark
-                halibut, North Pacific.
+                White Swan is a crucial part of the supply chain, providing
+                transportation, and logistics solutions. As a privately held,
+                trucking and logistics company, with an active fleet of 25
+                trucks - White Swan facilitates freight transportation services
+                for various businesses, operating throughout all 48 US mainland
+                states. With plans to expand rapidly over 5 years, the company
+                is projected to employ 387 people in management, transportation,
+                logistics, and support by the end of 2026.
               </p>
 
               <div className={cls["bottom-title_container"]}>
                 <div className={cls["bottom-title"]}>
-                  <FiCheckCircle size={30} />
-                  Red salmon skilfish, threadtail mullet southern flounder,
-                  orangespine unicorn fish flounder bobtail snipe eel.
-                </div>
-                <div className={cls["bottom-title"]}>
-                  <FiCheckCircle size={30} />
-                  Trumpeter ropefish bonito roughy cobbler dogteeth tetra
-                  Russian sturgeon pollock sea snail.
+                  <FiCheckCircle size={70} />
+                  WhiteSwan has already established a growing business with
+                  leading clients, including some of market leaders in
+                  transportation and logistics in the US sector, including JB
+                  Hunt, TQL, Amazon and SCHNEIDER.
                 </div>
               </div>
             </div>

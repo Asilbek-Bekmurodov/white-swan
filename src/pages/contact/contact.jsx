@@ -19,20 +19,20 @@ export const contactData = [
   {
     icon: <RiPhoneLine size={18} className={cls.icon} />,
     title: "PHONE",
-    subtitle: ["+2 360 185 35 65", "+2 360 185 35 65"],
-    href: "tel: +2 360 185 35 65",
+    subtitle: ["+1 747 290 00 07", "+1 619 787 39 89"],
+    href: "tel: +1 747 290 00 07",
   },
   {
     icon: <HiOutlineMail size={18} className={cls.icon} />,
     title: "EMAIL",
-    subtitle: ["transx_info@gmail.com"],
-    href: "mailto:someone@example.com",
+    subtitle: ["whiteswancorporation@gmail.com"],
+    href: "mailto:whiteswancorporation@gmail.com",
   },
   {
     icon: <GoLocation size={18} className={cls.icon} />,
     title: "LOCATION",
-    subtitle: ["2307 Brooklyn, New York,", "United States"],
-    href: "https://www.google.com/maps",
+    subtitle: ["100 E Campus View Blvd, Colombus,", "United States"],
+    href: "https://www.google.com/maps/place/100+E+Campus+View+Blvd,+Columbus,+OH+43235/@40.1190268,-83.0143925,15z/data=!4m6!3m5!1s0x8838f36aab7e4fa3:0x35086d0ce1a7548c!8m2!3d40.1190268!4d-83.0143925!16s%2Fg%2F11bw3g2h38?hl=en-us",
   },
   {
     icon: <AiOutlineShareAlt size={18} className={cls.icon} />,
@@ -186,7 +186,7 @@ function Contact() {
           <div className={cls["map-container"]}>
             <iframe
               className={cls.map}
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.1993960357!2d-0.119554!3d51.503297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2z0JvQvtC90LTQvtC90YHQutC40Lkg0JPQu9Cw0Lc!5e0!3m2!1sru!2sus!4v1678496502031!5m2!1sru!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14466.685348341442!2d-83.01511374829563!3d40.12091886711596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838f36aab7e4fa3%3A0x35086d0ce1a7548c!2s100%20E%20Campus%20View%20Blvd%2C%20Columbus%2C%20OH%2043235%2C%20USA!5e0!3m2!1sen!2s!4v1679862061594!5m2!1sen!2s"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

@@ -21,14 +21,14 @@ function Achievement() {
                   <CountUp
                     className={cls.num}
                     start={0}
-                    end={50}
+                    end={48}
                     duration={2}
                     delay={0}
                   />
                 )}
-                <span> cities</span>
+                <span> states</span>
               </div>
-              <p className={cls["card-subtitle"]}>Around the world</p>
+              <p className={cls["card-subtitle"]}>Of the USA</p>
             </div>
             <div className={cls["statistic-card"]}>
               <div className={cls.number}>
@@ -36,14 +36,14 @@ function Achievement() {
                   <CountUp
                     className={cls.num}
                     start={0}
-                    end={2}
+                    end={5}
                     duration={3}
                     delay={0}
                   />
                 )}
                 <span> million</span>
               </div>
-              <p className={cls["card-subtitle"]}>Happy clients</p>
+              <p className={cls["card-subtitle"]}>Annual Revenue in USD</p>
             </div>
             <div className={cls["statistic-card"]}>
               <div className={cls.number}>
@@ -51,14 +51,14 @@ function Achievement() {
                   <CountUp
                     className={cls.num}
                     start={0}
-                    end={4}
+                    end={3}
                     duration={2}
                     delay={0}
                   />
                 )}
-                <span> million</span>
+                <span> years</span>
               </div>
-              <p className={cls["card-subtitle"]}>Deliver goods every week</p>
+              <p className={cls["card-subtitle"]}> in Business</p>
             </div>
           </div>
         </div>

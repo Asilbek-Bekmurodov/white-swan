@@ -15,32 +15,28 @@ function Mission() {
         <div className={cls["right-container"]}>
           <span className={cls["small-title"]}>MISSION</span>
           <h3 className={cls.title}>
-            Our mission is to
-            <span> Give you</span> Good Services
+            <span>Company Mission</span>
           </h3>
           <p className={cls["bold-subtitle"]}>
-            Brook trout powen harelip sucker gibberfish beluga sturgeon
-            coelacanth tidewater goby elephant fish yellowtail slender snipe eel
-            rasbora
+            Understanding the company’s strategic objectives, and underlying
+            business philosophy shapes White Swan’s overall mission.
           </p>
 
           <p className={cls.subtitle}>
-            Rainbowfish powen paddlefish brotula Arctic char zebra bullhead
-            shark. Yellowhead jawfish gianttail temperate ocean-bass Atlantic
-            eel river stingray skilfish. Flounder.
-          </p>
-
-          <p className={cls.subtitle}>
-            Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino
-            largenose fish moonfish aruana glowlight danio. Basking shark
-            halibut, North Pacific.
+            White Swan’s goal as a key logistics and supply chain partner will
+            be evident in the form of lower transportation costs, optimized
+            deliveries, and better systems for managing services. To fulfill
+            this strategic mission, White Swan will embark on a five-point
+            roadmap, that not only serves its current customer base but will aid
+            the company in achieving its strategic expansion plans over the next
+            five years.
           </p>
 
           <div className={cls["bottom-title_container"]}>
-            <div className={cls["bottom-title"]}>
+            {/* <div className={cls["bottom-title"]}>
               Red salmon skilfish, threadtail mullet southern flounder,
               orangespine unicorn fish flounder bobtail snipe eel.
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

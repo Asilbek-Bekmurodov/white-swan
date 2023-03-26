@@ -24,24 +24,19 @@ function Footer() {
         </div>
         <div className={cls.right}>
           <div className={cls.box}>
-            <h3>Columbia Office</h3>
-            <p>Washington 165,</p>
-            <p>NY CA 54003</p>
-          </div>
-          <div className={cls.box}>
-            <h3>New Mexico Office</h3>
-            <p>10 Maggie Valleys,</p>
-            <p>United States</p>
+            <h3>Our Office</h3>
+            <p>100 E CAMPUS VIEW BLVD SUITE 250 </p>
+            <p>COLUMBUS, OH 43235</p>
           </div>
           <div className={cls.box}>
             <h3>Work Inquiries</h3>
             <p>Interested in working with us?</p>
-            <p>transx@mail.com</p>
+            <p>whiteswansafety@gmail.com</p>
           </div>
           <div className={cls.box}>
             <h3>Phone</h3>
-            <p>+1 800 674 78 91</p>
-            <p>+1 800 257 31 93</p>
+            <p>+1 747 290 00 07</p>
+            <p>+1 619 787 39 89</p>
           </div>
         </div>
       </div>

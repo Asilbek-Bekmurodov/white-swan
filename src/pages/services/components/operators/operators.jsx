@@ -2,9 +2,9 @@ import { FiCheckCircle } from "react-icons/fi";
 //assets
 import SevicePhoto from "../../../../assets/images/female-call-center-agent-posing-with-headphones-with-mic.jpg";
 //stylesheet
-import cls from "./our-service.module.scss";
+import cls from "./operators.module.scss";
 
-function OurService() {
+function Operators() {
   return (
     <div className={cls["about-info"]}>
       <div className={cls["left-container"]}>
@@ -13,29 +13,41 @@ function OurService() {
       <div className={cls["right-container"]}>
         <span className={cls["small-title"]}>OUR SERVICE</span>
         <h3 className={cls.title}>
-          Brokers <span>and</span> clients
+          Owner Operators <span>and</span> Drivers
         </h3>
 
         <div className={cls["bottom-title_container"]}>
           <div className={cls["bottom-title"]}>
             <FiCheckCircle size={30} />
-            24/7 Update
+            24/7 Dispatching
           </div>
           <div className={cls["bottom-title"]}>
             <FiCheckCircle size={30} />
-            Cargo Insurance
+            Modern Equipment
           </div>
           <div className={cls["bottom-title"]}>
             <FiCheckCircle size={30} />
-            Easy Invoicing
+            High per mile pay for both solo and team
           </div>
           <div className={cls["bottom-title"]}>
             <FiCheckCircle size={30} />
-            Online Tracking
+            On time payment
+          </div>
+          <div className={cls["bottom-title"]}>
+            <FiCheckCircle size={30} />
+            High valuable loads
+          </div>
+          <div className={cls["bottom-title"]}>
+            <FiCheckCircle size={30} />
+            Significant number of partnership, such as Amazon, Fedex, XPO
+          </div>
+          <div className={cls["bottom-title"]}>
+            <FiCheckCircle size={30} />
+            Referral bonuses
           </div>
         </div>
       </div>
     </div>
   );
 }
-export default OurService;
+export default Operators;

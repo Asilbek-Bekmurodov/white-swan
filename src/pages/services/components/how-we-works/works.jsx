@@ -6,22 +6,26 @@ const stepsData = [
   {
     stepNum: "01",
     stepTitle: "Listening you",
-    stepSubtitle:"Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback",
+    stepSubtitle:
+      "Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback",
   },
   {
     stepNum: "02",
-    stepTitle: "Lane pairing analysis",
-    stepSubtitle:"Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false",
+    stepTitle: "Check all details",
+    stepSubtitle:
+      "Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false",
   },
   {
     stepNum: "03",
-    stepTitle: "Check all details",
-    stepSubtitle:"Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat",
+    stepTitle: "Processing",
+    stepSubtitle:
+      "Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat",
   },
   {
     stepNum: "04",
     stepTitle: "Fast & efficient delivery",
-    stepSubtitle:"Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a",
+    stepSubtitle:
+      "Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a",
   },
 ];
 
@@ -36,9 +40,6 @@ function Works() {
             <div key={idx} className={cls.steps}>
               <div className={cls["step-number"]}>{stepNum}</div>
               <h4 className={cls["step-title"]}>{stepTitle}</h4>
-              <p className={cls["step-subtitle"]}>
-                {stepSubtitle}
-              </p>
             </div>
           ))}
         </div>

@@ -12,7 +12,9 @@ const partnersData = [
   {
     img: "https://www.ti-insight.com/wp-content/uploads/2017/01/jb-hunt-transport-logo.jpg",
   },
-  { img: "https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FedEx_Ground.svg/2560px-FedEx_Ground.svg.png",
+  },
 ];
 
 function Partners() {

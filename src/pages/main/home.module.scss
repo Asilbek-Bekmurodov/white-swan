@@ -61,7 +61,7 @@
 }
 .second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.topgear.com/sites/default/files/2022/12/0x0-Semi_13.jpg?w=1920&h=1080");
+    url("../../assets/images/whiteswan-bg.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 .third {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1590504805643-bb1f94cde7fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    url("https://www.topgear.com/sites/default/files/2022/12/0x0-Semi_13.jpg?w=1920&h=1080");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,4 +163,5 @@
   max-width: 650px;
   font-family: "Inter", sans-serif;
   float: right;
+  margin-top: -100px;
 }
