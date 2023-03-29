@@ -40,17 +40,11 @@
     }
   }
   .right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     color: #fff;
     gap: 40px;
-    @media (max-width: 1170px) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 430px) {
-      grid-template-columns: 1fr;
-      align-items: center;
-    }
+
     h3 {
       padding-bottom: 5px;
       color: #f9b026;

@@ -6,10 +6,14 @@
   .title {
     font-size: 45px;
     line-height: 50px;
-    max-width: 600px;
+    max-width: 500px;
     letter-spacing: 3px;
     color: #161415;
     margin-bottom: 30px;
+    text-transform: capitalize;
+    span {
+      color: #f9b025;
+    }
     @media (max-width: 1155px) {
       font-size: 45px;
       margin-bottom: 20px;
@@ -32,11 +36,15 @@
   .ceo-container {
     display: flex;
     justify-content: center;
-    height: 400px;
+    @media (max-width: 870px) {
+      flex-direction: column;
+    }
     .ceo-photo {
       width: 40%;
-      @media (max-width: 576px) {
-        width: 50%;
+
+      @media (max-width: 870px) {
+        width: 100%;
+        height: 500px;
       }
       img {
         width: 100%;
@@ -46,15 +54,15 @@
     }
     .ceo-info {
       width: 60%;
-      padding: 45px 32px;
+      padding: 30px;
       background-color: #efefef;
-      @media (max-width: 576px) {
-        width: 50%;
+      @media (max-width: 870px) {
+        width: 100%;
       }
       .name {
-        margin-bottom: 25px;
         font-size: 27px;
         line-height: 32px;
+        margin-top: auto;
         color: #f9b025;
         @media (max-width: 1155px) {
           font-size: 20px;
@@ -71,11 +79,16 @@
         }
       }
       .about-wrapper {
-        overflow: scroll;
-        height: 80%;
-        .about {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        h5 {
           font-size: 20px;
-          line-height: 30px;
+          margin-bottom: 20px;
+        }
+        .about {
+          font-size: 18px;
+          line-height: 25px;
           color: #161415;
 
           @media (max-width: 768px) {
