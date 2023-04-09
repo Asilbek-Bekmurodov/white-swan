@@ -1,0 +1,38 @@
+.container {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  text-align: center;
+  margin-bottom: 90px;
+  .circle {
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}

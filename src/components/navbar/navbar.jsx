@@ -9,8 +9,7 @@ import cx from "classnames";
 import cls from "./navbar.module.scss";
 import HamburgerMenu from "../hamburgerMenu";
 
-
-function Navbar({ fatherHeight, bgNav }) {
+function Navbar({ fatherHeight, bgNav, position }) {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
 
@@ -27,7 +26,9 @@ function Navbar({ fatherHeight, bgNav }) {
   }, [fatherHeight]);
   return (
     <div
-      style={bgNav && { background: "black" }}
+      style={
+        bgNav && { background: "black" } 
+      }
       className={cx(cls.container, navbar === true && cls.active)}
     >
       <div className={cls.navbar}>
